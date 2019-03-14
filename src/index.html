@@ -8,10 +8,10 @@
     <title>美团</title>
     <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./fonts/iconfont.css">
-    <link rel="stylesheet" href="./index.css">
-    <script src="./js/flexible.js"></script>
-    <script src="./js/better-scroll.js"></script>
-    <script src="./js/swiper.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/libs/flexible.js"></script>
+    <script src="./js/libs/better-scroll.js"></script>
+    <script src="./js/libs/swiper.js"></script>
 </head>
 
 <body>
@@ -37,10 +37,10 @@
                 <div class="bgImg">
                     <img src="./img/download_banner.png" alt="">
                 </div>
-                <div class="swiper-container">
+                <div class="swiper-container container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <dl>
+                        <div class="swiper-slide main">
+                            <!-- <dl>
                                 <dt><img src="./img/4_r3_c7.png" alt=""></dt>
                                 <dd>美食</dd>
                             </dl>
@@ -79,10 +79,10 @@
                             <dl>
                                 <dt><img src="./img/4_r3_c7.png" alt=""></dt>
                                 <dd>美食</dd>
-                            </dl>
+                            </dl> -->
                         </div>
-                        <div class="swiper-slide">
-                            <dl>
+                        <div class="swiper-slide main2">
+                            <!-- <dl>
                                 <dt><img src="./img/4_r3_c9.png" alt=""></dt>
                                 <dd>美食</dd>
                             </dl>
@@ -121,16 +121,16 @@
                             <dl>
                                 <dt><img src="./img/4_r3_c9.png" alt=""></dt>
                                 <dd>美食</dd>
-                            </dl>
+                            </dl> -->
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div style="background:#ececec;height: 20px;"></div>
-                <div class="content">
+                <div class="content" id="content">
                     <h2>猜你喜欢</h2>
                     <hr>
-                    <dl>
+                    <!--<dl>
                         <dt><img src="./img/4_r6_c2.png" alt=""></dt>
                         <dd>
                             <p>华莱士</p>
@@ -165,22 +165,15 @@
                                 <span class="sale">已售4321</span>
                             </p>
                         </dd>
-                    </dl>
-
+                    </dl> -->
                 </div>
             </div>
         </section>
     </div>
 </body>
+
+<script src="./js/index.js"></script>
 <script>
-    var myBScroll = new BScroll('section');
-    var mySwiper = new Swiper('.swiper-container', {
-        loop: true,
-        pagination: {
-            el: 'swiper-pagination',
-            paginationClickable: true
-        }
-    })
 </script>
 
 </html>
